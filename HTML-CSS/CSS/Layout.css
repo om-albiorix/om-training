@@ -1,0 +1,44 @@
+header {
+  background: url(/om-training/HTML-CSS/ASSETS/Images/vector-abstract-technology-header-background.webp);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+}
+body {
+  margin: auto;
+  padding: auto;
+}
+ul {
+  list-style-type: none;
+  background-color: GRAY;
+  color: white;
+  display: flex;
+  margin: auto;
+  padding: 0;
+}
+li {
+  padding: 10px 12px;
+  cursor: pointer;
+}
+li:hover {
+  background-color: black;
+}
+.middle-div {
+  width: 49.88%;
+  float: left;
+  text-align: center;
+  border: 1px solid black;
+}
+.head {
+  text-align: center;
+}
+footer {
+  background-color: gray;
+  color: white;
+  padding: 20px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
