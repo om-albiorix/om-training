@@ -1,0 +1,18 @@
+.gradient-css {
+  background-image: linear-gradient(to right, pink, yellow);
+}
+.gradient-css2 {
+  background-image: linear-gradient(to bottom right, orange, white, green);
+}
+.gradient-css3 {
+  background-image: repeating-conic-gradient(
+    orange 0deg 10deg,
+    white 10deg 20deg,
+    green 20deg 30deg
+  );
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: auto;
+}

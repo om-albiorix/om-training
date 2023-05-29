@@ -1,0 +1,16 @@
+.animation-exa {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: om;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+@keyframes om {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 300px;
+  }
+}

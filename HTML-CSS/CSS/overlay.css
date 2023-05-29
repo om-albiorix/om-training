@@ -1,0 +1,80 @@
+.relative1 {
+  position: relative;
+  background-color: black;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  color: white;
+  margin: auto;
+}
+.absolute1 {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+.relative1:hover .absolute1 {
+  opacity: 1;
+}
+
+/* second example */
+.image1 {
+  background-color: black;
+  width: 100%;
+  height: 200px;
+}
+.relative2 {
+  position: relative;
+  width: 50%;
+}
+.absolute12 {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  transition: 0.5s linear;
+}
+.text {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  overflow: hidden;
+  color: black;
+  background-color: white;
+}
+.relative1:hover .absolute12 {
+  bottom: 0;
+  height: 100%;
+}
+.pagination {
+  float: left;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 3px;
+}
+a:hover {
+  background-color: gray;
+}
+a .active:active {
+  background-color: green;
+}
