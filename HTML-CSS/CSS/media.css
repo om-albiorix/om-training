@@ -1,0 +1,52 @@
+ul {
+  padding: 0;
+  margin: 0;
+  background-color: gray;
+  overflow: hidden;
+}
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+}
+li {
+  padding: 10px 12px;
+  cursor: pointer;
+  list-style-type: none;
+  float: left;
+  display: block;
+}
+li:hover {
+  background-color: black;
+  color: white;
+}
+.column {
+  width: 49.99%;
+  float: left;
+}
+.main {
+  padding: 12px 12px;
+}
+.tezt {
+  font-size: 20px;
+}
+@media screen and (max-width: 992px) {
+  .column {
+    width: 49.99%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    text-align: center;
+  }
+  li {
+    float: none;
+    width: 100%;
+  }
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

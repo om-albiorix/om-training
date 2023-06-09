@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counter</title>
+    <style>
+      body {
+        counter-reset: section;
+      }
+      h2::before {
+        counter-increment: section;
+        content: "section" counter(section) " : ";
+      }
+      h3 {
+        counter-reset: subsection;
+      }
+      h3::before {
+        counter-increment: section;
+        content: counter(section) "." " ";
+      }
+      h4::before {
+        counter-increment: subsection;
+        content: counter(section) "." counter(subsection) " ";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <h2>Albiorix</h2>
+    <h2>Albiorix</h2>
+    <h2>Albiorix</h2>
+    <h2>Albiorix</h2>
+    <h2>Albiorix</h2>
+
+    <h3>Om Solanki</h3>
+    <h4>Divy</h4>
+    <h4>Divy</h4>
+    <h4>Divy</h4>
+    <h4>Divy</h4>
+
+    <h3>Om Solanki</h3>
+    <h4>Divy</h4>
+    <h4>Divy</h4>
+    <h4>Divy</h4>
+    <h4>Divy</h4>
+  </body>
+</html>

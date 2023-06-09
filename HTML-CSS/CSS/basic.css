@@ -1,0 +1,18 @@
+.bg-image {
+  background: url(https://thumbs.dreamstime.com/b/plain-blue-background-pink-gradient-wallpaper-image-text-layering-plain-blue-background-gradient-125009166.jpg)
+    no-repeat;
+}
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background-color: green;
+}

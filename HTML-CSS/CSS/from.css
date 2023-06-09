@@ -1,0 +1,27 @@
+.input {
+  padding: 7px;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 8px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+}
+.main {
+  width: 20%;
+  justify-content: center;
+  display: flex;
+  padding: 50px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 60px;
+}
