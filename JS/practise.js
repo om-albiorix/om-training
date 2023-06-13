@@ -10,8 +10,9 @@ console.log(myFunction(2, 3));
 // 2. arrow function\
 
 const myName = (a, b) => {
-    a * b
+    return a * b
 };
+console.log(myName(a, b));
 // object
 
 const myObj = {
