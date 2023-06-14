@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js practise</title>
+    <script src="/JS/index.js"></script>
+  </head>
+  <body id="clear">
+    <h1>JS Learning</h1>
+    <div>
+      This below example teach you js can change element :<br />
+      <button class="btn" id="btn-1" onclick="myFunc()">Click me</button>
+    </div>
+    <br />
+    <div>
+      below example teach you onclick event with date : <br />
+      <button onclick="myFun1()" class="btn">
+        you want to know today date so please Click
+      </button>
+    </div>
+    <p id="date"></p>
+    <button class="clearbtn" onclick="myFunc3()">Clear all</button>
+  </body>
+  <script>
+    const myFunc = () => {
+      document.getElementById("btn-1").innerHTML = "why you click!";
+    };
+    const myFun1 = () => {
+      document.getElementById("date").innerHTML = Date();
+    };
+    const myFunc3 = () => {
+      document.getElementById("clear").style.display = "none";
+    };
+  </script>
+</html>
