@@ -94,3 +94,48 @@ ids = [23, 34, 100, 124, 44];
 
 
 
+//array can store any type of data
+
+let arr1 = [1, { name: "om" }, true, function () { alert("hello"); }];
+console.log(arr1[1].name);  // accesing property in array of object
+
+// array in copy item another array are same of array
+let arr2 = arr1;
+console.log(arr2 === arr1);// true;
+arr2.push("om");
+console.log(arr1);
+
+//using loop to get value of Array;
+let omFamily = ["om", "yash", "kishan", "dhruv", "Divy", "Utsav", "taksh"];
+let om = "";
+for (let x = 0; x < omFamily.length; x++) {
+    om += omFamily[x];
+}
+console.log(om);
+
+// length
+
+const numbericArray = [];
+numbericArray[123] = 12;
+console.log(numbericArray.length); // it retuns 124
+
+// simple way to clear array
+
+myArray = [1, 2, 3, 4, 4];
+myArray.length = 0;
+console.log(myArray);
+
+// array to string
+let stringarray = String(myArray);
+console.log(stringarray === "1,2,3,4,4");  // return true;
+
+//task
+
+const styles = ["Jazz", "Blues"];
+styles.push("Rock-n-Roll");
+styles[1] = "classics";  // Math.floor(styles.length-1/2)
+styles.shift();
+styles.unshift("Rap", "Reggae");
+console.log(styles);
+
+

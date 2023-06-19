@@ -81,5 +81,104 @@ let applyflat = flatarr.flat();
 console.log(applyflat, "flatarr");
 
 
-// splice ----- add new item into array;
+// splice ----- add new item into array & remove item of array check below example
 // slice ---- remove item from array;
+
+let spliceMethod = ["albiorix", "openExcel", "tcs"];
+spliceMethod.splice(1, 1, "Adeptdigital");
+console.log(spliceMethod); // it returns  [ 'albiorix', 'Adeptdigital', 'tcs' ]
+spliceMethod.splice(1, 1);
+console.log(spliceMethod);
+
+// splice another example
+
+const mentorAlbiorix = ["Parag", "Meet", "Darshan", "jaydeep"];
+mentorAlbiorix.splice(0, 3, "Renishbhai");
+console.log(mentorAlbiorix);
+
+// splice method in also add without reomve element
+
+mentorAlbiorix.splice(2, 0, "Nitin", "Dhaval");
+console.log(mentorAlbiorix);
+// ['Parag', 'Meet', 'Nitin', 'Dhaval', 'Darshan', 'jaydeep']
+
+// -----------------slice method
+
+// example of splice and slice b/w diff
+var array = [1, 2, 3, 4, 5];
+console.log(array.splice(2));
+
+//slice
+var array2 = [1, 2, 3, 4, 5]
+console.log(array2.slice(2, 'efee'));
+
+
+console.log("----after-----");
+console.log(array);
+console.log(array2);
+
+// foreach for aryray
+let foreachArray = ["ahemdabad", "jamanagar", "BARODA", "SURAT"];
+foreachArray.forEach((item, index, array) => { alert(`${index}`) }
+)
+
+// indexof lastindexof incldes examples
+
+const findinArray = ["meet", "rahul", "rohit", "jalpesh"];
+console.log(findinArray.includes("meet")); // is present in array
+console.log(findinArray.indexOf("meet")); // index number in array
+console.log(findinArray.lastIndexOf("meet")); // lastindex number in array
+
+// array of object example
+
+const employeeData = [
+    { id: 1, name: "om" },
+    { id: 2, name: "jaydeep" },
+    { id: 3, name: "meet" }
+]
+let dataFounded = employeeData.find(item => item.name == "JD ");
+console.log(dataFounded);
+
+// findindex method
+// if element is not present in array then return -1
+
+console.log(employeeData.findIndex(item => (item.name == "jalpesh")));
+
+
+// find lastindexof
+// if element is not present in array then return -1
+
+console.log(employeeData.findLastIndex(item => (item.name == "om")));
+
+//filter method
+//find method work at only single value if we want find multi value then filter method many item return
+const userData = [
+    { id: 1, name: "om" },
+    { id: 2, name: "jaydeep" },
+    { id: 3, name: "meet" }
+]
+let someUserData = userData.filter(item => item.id < 3);
+console.log(someUserData);
+
+// example callback
+debugger;
+function myFunction(some) {
+    console.log("ffun", some);
+};
+
+function sumFunc(num1, num2) {
+    let result = num1 + num2;
+    myFunction(result);
+};
+
+sumFunc(1, 3);
+sumFunc(500, 1000);
+
+
+
+// map method
+// array map method call for each element of array and returns the result of array
+
+let mapFunction = ["om", "yash", "kishan", "dhruv"];
+mapFunction.map(item => item.length);
+console.log(mapFunction);
