@@ -72,3 +72,25 @@ console.log(text1);
 myFuncarr.push(1);
 console.log(myFuncarr);
 
+// add a specific index on array
+let itCompany = ["albiorix", "bacancy", "radix", "simform"];
+itcompany[10] = "OpenExceall";
+console.log(itCompany);
+
+//when use of array and object
+//You should use objects when you want the element names to be strings (text).
+//You should use arrays when you want the element names to be numbers.
+
+// how can recognize it is a arrry 
+const name = ["banana", "mango"];
+console.log(Array.isArray(name));
+
+console.log(name instanceof Array);
+
+// type script in array
+
+//let ids: Array<number>;
+ids = [23, 34, 100, 124, 44];
+
+
+
