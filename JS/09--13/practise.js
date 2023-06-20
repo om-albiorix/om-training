@@ -33,5 +33,5 @@ const myData = {
         return this.firstName + " " + this.lastName;
     }
 }
-alert(myData.getfullname())
+alert(myData.getfullname());
 

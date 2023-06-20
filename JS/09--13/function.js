@@ -38,7 +38,7 @@ myFname();
 
 
 function myPractiseFunc(age, city,arr) {
-    console.log(age + "        " + city +" "+ arr[0]);
+    console.log(age + " " + city +" "+ arr[0]);
     
 }
 myPractiseFunc(21, "dhari", [1, 3, 3, 4]);

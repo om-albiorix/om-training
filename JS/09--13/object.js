@@ -30,7 +30,7 @@ const omData = createFunction("Sanket", "Solanki", 22);
 console.log(omData);
 
 
-function myFunction(age, text, arr) {
-    console.log(arguments)
-}
+    function myFunction(age, text, arr) {
+        console.log(arguments)
+    }
 myFunction(12, "Om Solanki", [12, 14])

@@ -10,7 +10,7 @@ console.log("forlength", mystr.length);
 
 const mystrSlice = "Om,Yash,Divy,Taksh";
 mystrSlice.slice(7, 13);
-console.log('strSlice', mystrSlice.slice);
+console.log('strSlice', mystrSlice);
 
 //3. substring is similar to slice
 
