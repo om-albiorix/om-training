@@ -137,5 +137,22 @@ styles[1] = "classics";  // Math.floor(styles.length-1/2)
 styles.shift();
 styles.unshift("Rap", "Reggae");
 console.log(styles);
+const myFruits = ["kishan", "meet", "jignesh", "jd", "darshan"];
+let flength = myFruits.length;
+
+
+let text11 = "<ul>";
+for (let i = 0; i < flength; i++) {
+    text11 += "<li>" + myFruits[i] + "</li>";
+}
+text += "</ul>";
+console.log(text);
+
+myFruits.push("dhaval");
+console.log(myFruits);
+
+const myList = ["Banana", "Mango", "Apple"];
+myList.toString();
+console.log(myList);
 
 
