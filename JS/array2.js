@@ -24,3 +24,8 @@ const newArray = [1, 2, 3, 4];
 const new2Array = ["albiorix", "tcs", "simform"];
 console.log(newArray.concat(new2Array));
 
+// flat method
+// return new array with concat subarray;
+
+const myArray = [[1, 3], [1, 4], [15]];
+console.log(myArray.flat());
