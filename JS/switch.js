@@ -13,3 +13,18 @@ switch (fruits) {
 }
 
 // if you change the value of expr like you changes "Oranges" and at thst time your switch are break at oranges
+let x = 5;
+
+switch (x) {
+  case 3:
+    alert('Too small');
+    break;
+  case 4:
+    alert('Exactly!');
+    break;
+  case 5:
+    alert('Too big');
+    break;
+  default:
+    alert("I don't know such values");
+}
